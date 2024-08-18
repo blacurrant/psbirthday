@@ -66,18 +66,18 @@ const LandingPage = () => {
           transition={{ duration: 1 }}
           className="text-center"
         >
-          <div className="flex flex-col gap-5 text-white text-9xl mb-8 drop-shadow-md leading-relaxed">
+          <div className="flex flex-col gap-5 text-white text-6xl lg:text-9xl mb-8 drop-shadow-md leading-relaxed">
             Happy Birthday
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: 1 }}
                 >
-            <p className=" text-pink-300 text-6xl text-right">
+            <p className=" text-pink-300 text-3xl lg:text-6xl text-right">
               My Love!{" "}
               <span>
                 {" "}
-                  <HeartFilled className="text-pink-300 drop-shadow-lg text-6xl mb-8 animate-pulse" />
+                  <HeartFilled className="text-pink-300 drop-shadow-lg text-3xl lg:text-6xl mb-8 animate-pulse" />
               </span>
             </p>
                 </motion.div>
