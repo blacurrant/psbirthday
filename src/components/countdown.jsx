@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from "react";
 import { Typography, Card, Button } from "antd";
 import { motion } from "framer-motion";
@@ -76,10 +74,10 @@ const Countdown = ({ targetDate }) => {
         transition={{ duration: 0.5 }}
       >
         <Card className="w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-white bg-opacity-80 font-vibes">
-          <p  className="m-0 text-3xl font-bold text-red-950">
+          <p className="m-0 text-3xl font-bold text-red-950">
             {timeLeft[interval]}
           </p>
-        <p className="text-red-950 text-xl">{interval}</p>
+          <p className="text-red-950 text-xl">{interval}</p>
         </Card>
       </motion.div>
     );
@@ -104,7 +102,12 @@ const Countdown = ({ targetDate }) => {
           timeComponents
         ) : (
           <div className="text-center font-vibes">
-            <span className="text-pink-100 font-light text-5xl tracking-wide">
+            <span
+              onClick={
+                () => setDrawerVisible(true) // Open the drawer when countdown ends
+              }
+              className="text-pink-100 font-light text-5xl tracking-wide"
+            >
               do we have a minute?
             </span>
             <Fireworks />
