@@ -55,7 +55,7 @@ import Countdown from "../components/countdown";
 const { Title } = Typography;
 
 const LandingPage = () => {
-  const birthdayDate = "2024-08-21T00:00:00"; // Example date, adjust as needed
+  const birthdayDate = "2024-08-21T12:00:00"; // Example date, adjust as needed
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-red-950 via-pink-800 to-red-900">
