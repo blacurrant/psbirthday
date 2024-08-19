@@ -5,11 +5,10 @@ import video from "../assets/video.mp4";
 const VideoDrawer = ({ visible, onClose }) => {
   return (
     <Drawer
-      title={null} // Remove the title
+    title={<a href="https://youtu.be/IAvBqaVLsJ8">oops, try this!</a>}
       placement="right"
       onClose={onClose}
       visible={visible}
-      width={500}
       drawerStyle={{ padding: 0 }} // Remove default padding
       bodyStyle={{ padding: 0, margin: 0 }}
       width="100vw"
